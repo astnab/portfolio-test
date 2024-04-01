@@ -1,0 +1,98 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+body {
+  background-color: white !important;
+}
+.email {
+  text-decoration: none !important;
+}
+
+.email:hover {
+  background-color: #5C5470 !important;
+  color: white !important;
+  transition: .2s;
+}
+
+.headerlink {
+  text-decoration: none !important;
+}
+
+.headerlink:hover {
+  color: #5C5470 !important;
+  font-weight: 500 !important;
+}
+
+.navline {
+  position: relative !important;
+  padding: 0 10px !important;
+  text-decoration: none !important;
+}
+
+.navline:after {
+  content: "" !important;
+  position: absolute !important;
+  background-color: 
+  #5C5470 !important;
+  font-weight: 500 !important;
+  height: 2px !important;
+  width: 0 !important;
+  left: 0 !important;
+  bottom: -5px !important;
+  transition: 0.4s;
+}
+
+.navline:hover {
+  color: #5C5470 !important;
+}
+
+.navline:hover:after {
+  width: 100% !important;
+}
+
+/* .portfolio img {
+  max-width: 300px;
+} */
+
+.gallery {
+  justify-content: center;
+  justify-items: center;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+.gallery div {
+  gap: 30px;
+  width: auto;
+  display: flex;
+  grid-template-columns: auto auto auto !important;
+  padding: 0px;
+}
+
+.gallery img {
+  filter: grayscale(100%);
+  transition: .2s;
+  max-height: 200px;
+  max-width: auto;
+  object-fit: cover;
+}
+
+.gallery img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.logopic img {
+  max-width: 50px;
+}
